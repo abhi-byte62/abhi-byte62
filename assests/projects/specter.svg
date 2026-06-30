@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="560"
+     height="220"
+     viewBox="0 0 560 220">
+
+<defs>
+
+<linearGradient id="card"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="100%">
+
+<stop offset="0%" stop-color="#111827"/>
+<stop offset="100%" stop-color="#1E293B"/>
+
+</linearGradient>
+
+<linearGradient id="blue">
+
+<stop offset="0%" stop-color="#2563EB"/>
+<stop offset="100%" stop-color="#60A5FA"/>
+
+</linearGradient>
+
+<filter id="glow">
+
+<feGaussianBlur stdDeviation="4" result="blur"/>
+
+<feMerge>
+
+<feMergeNode in="blur"/>
+
+<feMergeNode in="SourceGraphic"/>
+
+</feMerge>
+
+</filter>
+
+</defs>
+
+<!-- Card -->
+
+<rect
+x="5"
+y="5"
+rx="22"
+ry="22"
+width="550"
+height="210"
+fill="url(#card)"
+stroke="#2563EB"
+stroke-width="2"/>
+
+<!-- Glow -->
+
+<circle
+cx="480"
+cy="60"
+r="18"
+fill="#3B82F6"
+opacity=".45"
+filter="url(#glow)">
+
+<animate
+attributeName="r"
+values="18;25;18"
+dur="3s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- Icon -->
+
+<text
+x="35"
+y="55"
+font-size="30">
+
+👻
+
+</text>
+
+<!-- Title -->
+
+<text
+x="80"
+y="55"
+font-size="24"
+font-family="Segoe UI"
+font-weight="700"
+fill="white">
+
+Specter Proxy
+
+</text>
+
+<!-- Subtitle -->
+
+<text
+x="35"
+y="95"
+font-size="18"
+font-family="Segoe UI"
+fill="#CBD5E1">
+
+MITM Proxy with TLS Interception
+
+</text>
+
+<!-- Tags -->
+
+<rect
+x="35"
+y="125"
+width="65"
+height="30"
+rx="15"
+fill="#1F2937"
+stroke="#2563EB"/>
+
+<text
+x="53"
+y="145"
+font-size="14"
+fill="white"
+font-family="Segoe UI">
+
+Java
+
+</text>
+
+<rect
+x="115"
+y="125"
+width="70"
+height="30"
+rx="15"
+fill="#1F2937"
+stroke="#2563EB"/>
+
+<text
+x="136"
+y="145"
+font-size="14"
+fill="white"
+font-family="Segoe UI">
+
+TLS
+
+</text>
+
+<rect
+x="200"
+y="125"
+width="75"
+height="30"
+rx="15"
+fill="#1F2937"
+stroke="#2563EB"/>
+
+<text
+x="221"
+y="145"
+font-size="14"
+fill="white"
+font-family="Segoe UI">
+
+MITM
+
+</text>
+
+<rect
+x="290"
+y="125"
+width="85"
+height="30"
+rx="15"
+fill="#1F2937"
+stroke="#2563EB"/>
+
+<text
+x="310"
+y="145"
+font-size="14"
+fill="white"
+font-family="Segoe UI">
+
+HTTPS
+
+</text>
+
+<!-- Divider -->
+
+<line
+x1="35"
+y1="178"
+x2="525"
+y2="178"
+stroke="#334155"/>
+
+<!-- Footer -->
+
+<text
+x="35"
+y="200"
+font-size="15"
+fill="#60A5FA"
+font-family="Segoe UI">
+
+View Repository →
+
+</text>
+
+</svg>
