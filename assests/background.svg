@@ -1,1 +1,74 @@
 
+<svg width="1200"
+     height="700"
+     viewBox="0 0 1200 700"
+     xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="bg"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="100%">
+
+<stop offset="0%" stop-color="#050816"/>
+
+<stop offset="100%" stop-color="#0F172A"/>
+
+</linearGradient>
+
+<radialGradient id="glow">
+
+<stop offset="0%" stop-color="#3B82F6" stop-opacity=".45"/>
+
+<stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+
+</radialGradient>
+
+</defs>
+
+<!-- Background -->
+
+<rect
+width="1200"
+height="700"
+fill="url(#bg)"/>
+
+<!-- Left Glow -->
+
+<circle
+cx="240"
+cy="170"
+r="220"
+fill="url(#glow)">
+
+<animate
+attributeName="r"
+values="220;250;220"
+dur="6s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- Right Glow -->
+
+<circle
+cx="970"
+cy="540"
+r="200"
+fill="url(#glow)">
+
+<animate
+attributeName="r"
+values="200;235;200"
+dur="7s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- Grid -->
+
+<g
+stroke="#1E3A8A"
+stroke-opacity=".18">
