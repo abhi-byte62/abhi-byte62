@@ -53,7 +53,7 @@ Goal:
 </p>
 ---
 
-# 📈 GitHub Analytics
+
 
 ## 📊 GitHub Analytics
 
