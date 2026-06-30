@@ -24,6 +24,10 @@
 
 </a>
 
+<a href="https://codeforces.com/profile/playboldAbhi">
+    <img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white"/>
+</a>
+
 <a href="https://leetcode.com/u/playboldAbhi/">
 
 <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white"/>
@@ -86,27 +90,6 @@ public class Developer {
 
 </p>
 
-# GitHub Stats
-
-<p align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=abhi-byte62&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github"/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhi-byte62&layout=compact&theme=tokyonight&hide_border=true"/>
-
-</p>
-
-<p align="center">
-
-<img src="https://streak-stats.demolab.com?user=abhi-byte62&theme=tokyonight&hide_border=true"/>
-
-</p>
-
-<p align="center">
-
-<img src="./assests/divider.svg"/>
-
-</p>
 
 
 # Featured Projects
@@ -171,12 +154,17 @@ A network packet sniffer with a visual layer on top, built to make raw traffic c
 <img src="https://skillicons.dev/icons?i=linkedin" height="50"/>
 </a>
 
+<a href="https://codeforces.com/profile/playboldAbhi">
+    <img src="https://cdn.simpleicons.org/codeforces/1F8ACB" height="50"/>
+</a>
+
 <a href="https://leetcode.com/u/playboldAbhi/">
-<img src="https://skillicons.dev/icons?i=leetcode" height="50"/>
+    <img src="https://cdn.simpleicons.org/leetcode/FFA116" height="50" />
 </a>
 
 <a href="mailto:mrabhisheak@gmail.com">
 <img src="https://skillicons.dev/icons?i=gmail" height="50"/>
 </a>
+
 
 </p>
