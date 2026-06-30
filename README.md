@@ -47,7 +47,7 @@ Goal:
 ## ⚡ Technical Skills
 
 <p align="center">
-<img src="./assets/skills.svg" width="100%">
+<img src="./assests/skills.svg" width="100%">
 </p>
 ---
 
