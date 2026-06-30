@@ -3,300 +3,97 @@
      height="520"
      viewBox="0 0 1200 520">
 
-<defs>
-
-<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#111827"/>
-    <stop offset="100%" stop-color="#1E293B"/>
-</linearGradient>
-
-<linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#2563EB"/>
-    <stop offset="100%" stop-color="#60A5FA"/>
-</linearGradient>
-
-<filter id="glow">
-    <feGaussianBlur stdDeviation="4" result="blur"/>
-    <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-</filter>
-
-</defs>
-
-<!-- Card -->
-
-<rect
-x="20"
-y="20"
-width="1160"
-height="480"
-rx="25"
-fill="url(#bg)"
-stroke="#2563EB"
-stroke-width="2"/>
-
-<!-- Title -->
-
-<text
-x="60"
-y="70"
-font-size="34"
-font-family="Segoe UI"
-font-weight="700"
-fill="white">
-
-⚡ Technical Skills
-
-</text>
-
-<!-- Java -->
-
-<text x="60" y="130" fill="white" font-size="22">Java</text>
-
-<rect
-x="200"
-y="112"
-width="820"
-height="20"
-rx="10"
-fill="#1F2937"/>
-
-<rect
-x="200"
-y="112"
-width="0"
-height="20"
-rx="10"
-fill="url(#bar)"
-filter="url(#glow)">
-
-<animate
-attributeName="width"
-from="0"
-to="780"
-dur="2s"
-fill="freeze"/>
-
-</rect>
-
-<text
-x="1045"
-y="128"
-fill="#60A5FA"
-font-size="18">
-
-95%
-
-</text>
-
-<!-- React -->
-
-<text x="60" y="190" fill="white" font-size="22">
-
-React
-
-</text>
-
-<rect
-x="200"
-y="172"
-width="820"
-height="20"
-rx="10"
-fill="#1F2937"/>
-
-<rect
-x="200"
-y="172"
-width="0"
-height="20"
-rx="10"
-fill="url(#bar)"
-filter="url(#glow)">
-
-<animate
-attributeName="width"
-from="0"
-to="735"
-dur="2.2s"
-fill="freeze"/>
-
-</rect>
-
-<text
-x="1045"
-y="188"
-fill="#60A5FA"
-font-size="18">
-
-90%
-
-</text>
-
-<!-- Spring -->
-
-<text
-x="60"
-y="250"
-fill="white"
-font-size="22">
-
-Spring Boot
-
-</text>
-
-<rect
-x="200"
-y="232"
-width="820"
-height="20"
-rx="10"
-fill="#1F2937"/>
-
-<rect
-x="200"
-y="232"
-width="0"
-height="20"
-rx="10"
-fill="url(#bar)"
-filter="url(#glow)">
-
-<animate
-attributeName="width"
-from="0"
-to="695"
-dur="2.4s"
-fill="freeze"/>
-
-</rect>
-
-<text
-x="1045"
-y="248"
-fill="#60A5FA"
-font-size="18">
-
-85%
-
-</text>
-
-<!-- Networking -->
-
-<text
-x="60"
-y="310"
-fill="white"
-font-size="22">
-
-Networking
-
-</text>
-
-<rect
-x="200"
-y="292"
-width="820"
-height="20"
-rx="10"
-fill="#1F2937"/>
-
-<rect
-x="200"
-y="292"
-width="0"
-height="20"
-rx="10"
-fill="url(#bar)"
-filter="url(#glow)">
-
-<animate
-attributeName="width"
-from="0"
-to="755"
-dur="2.6s"
-fill="freeze"/>
-
-</rect>
-
-<text
-x="1045"
-y="308"
-fill="#60A5FA"
-font-size="18">
-
-92%
-
-</text>
-
-<!-- DSA -->
-
-<text
-x="60"
-y="370"
-fill="white"
-font-size="22">
-
-Data Structures & Algorithms
-
-</text>
-
-<rect
-x="340"
-y="352"
-width="680"
-height="20"
-rx="10"
-fill="#1F2937"/>
-
-<rect
-x="340"
-y="352"
-width="0"
-height="20"
-rx="10"
-fill="url(#bar)"
-filter="url(#glow)">
-
-<animate
-attributeName="width"
-from="0"
-to="620"
-dur="2.8s"
-fill="freeze"/>
-
-</rect>
-
-<text
-x="1045"
-y="368"
-fill="#60A5FA"
-font-size="18">
-
-91%
-
-</text>
-
-<!-- Footer -->
-
-<line
-x1="60"
-y1="430"
-x2="1120"
-y2="430"
-stroke="#334155"/>
-
-<text
-x="60"
-y="465"
-fill="#94A3B8"
-font-size="18"
-font-family="Segoe UI">
-
-Always learning • Always building • Always improving
-
-</text>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect
+      x="20"
+      y="20"
+      width="1160"
+      height="480"
+      rx="24"
+      fill="url(#bg)"
+      stroke="#2563EB"
+      stroke-width="2"/>
+
+  <!-- Title -->
+  <text
+      x="60"
+      y="70"
+      fill="#FFFFFF"
+      font-size="32"
+      font-family="Arial"
+      font-weight="bold">
+      Technical Skills
+  </text>
+
+  <!-- Java -->
+  <text x="60" y="130" fill="#FFFFFF" font-size="22" font-family="Arial">Java</text>
+
+  <rect x="220" y="112" width="780" height="20" rx="10" fill="#374151"/>
+  <rect x="220" y="112" width="741" height="20" rx="10" fill="url(#bar)"/>
+
+  <text x="1030" y="128" fill="#60A5FA" font-size="18" font-family="Arial">95%</text>
+
+  <!-- React -->
+  <text x="60" y="190" fill="#FFFFFF" font-size="22" font-family="Arial">React</text>
+
+  <rect x="220" y="172" width="780" height="20" rx="10" fill="#374151"/>
+  <rect x="220" y="172" width="702" height="20" rx="10" fill="url(#bar)"/>
+
+  <text x="1030" y="188" fill="#60A5FA" font-size="18" font-family="Arial">90%</text>
+
+  <!-- Spring Boot -->
+  <text x="60" y="250" fill="#FFFFFF" font-size="22" font-family="Arial">Spring Boot</text>
+
+  <rect x="220" y="232" width="780" height="20" rx="10" fill="#374151"/>
+  <rect x="220" y="232" width="663" height="20" rx="10" fill="url(#bar)"/>
+
+  <text x="1030" y="248" fill="#60A5FA" font-size="18" font-family="Arial">85%</text>
+
+  <!-- Networking -->
+  <text x="60" y="310" fill="#FFFFFF" font-size="22" font-family="Arial">Networking</text>
+
+  <rect x="220" y="292" width="780" height="20" rx="10" fill="#374151"/>
+  <rect x="220" y="292" width="718" height="20" rx="10" fill="url(#bar)"/>
+
+  <text x="1030" y="308" fill="#60A5FA" font-size="18" font-family="Arial">92%</text>
+
+  <!-- DSA -->
+  <text x="60" y="370" fill="#FFFFFF" font-size="22" font-family="Arial">Data Structures &amp; Algorithms</text>
+
+  <rect x="360" y="352" width="640" height="20" rx="10" fill="#374151"/>
+  <rect x="360" y="352" width="582" height="20" rx="10" fill="url(#bar)"/>
+
+  <text x="1030" y="368" fill="#60A5FA" font-size="18" font-family="Arial">91%</text>
+
+  <!-- Divider -->
+  <line
+      x1="60"
+      y1="430"
+      x2="1120"
+      y2="430"
+      stroke="#334155"
+      stroke-width="1"/>
+
+  <!-- Footer -->
+  <text
+      x="60"
+      y="465"
+      fill="#94A3B8"
+      font-size="18"
+      font-family="Arial">
+      Always learning • Always building • Always improving
+  </text>
 
 </svg>
