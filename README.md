@@ -41,6 +41,14 @@ Goal:
 
 </p>
 
+
+
+
+## ⚡ Technical Skills
+
+<p align="center">
+<img src="./assets/skills.svg" width="100%">
+</p>
 ---
 
 # 📈 GitHub Analytics
