@@ -1,39 +1,98 @@
 <p align="center">
 
-<img src="./assests/banner.svg"/>
+<img src="./assests/banner.svg" width="100%"/>
 
 </p>
 
 <p align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=28&duration=3000&pause=900&color=3B82F6&center=true&vCenter=true&width=900&lines=Java+Developer;Full+Stack+Developer;React+Developer;Networking+Enthusiast;Building+Scalable+Applications"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=28&duration=3500&pause=1000&color=3B82F6&center=true&vCenter=true&width=900&lines=Full+Stack+Developer;Java+Developer;React+Developer;Spring+Boot+Developer;Networking+Enthusiast"/>
 
 </p>
 
----
+<p align="center">
+
+<a href="https://github.com/abhi-byte62">
+
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+
+</a>
+
+<a href="https://linkedin.com/in/YOUR-LINK">
+
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+
+</a>
+
+<a href="https://leetcode.com/u/playboldAbhi/">
+
+<img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white"/>
+
+</a>
+
+<a href="https://YOURPORTFOLIO.vercel.app">
+
+<img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
+
+</a>
+
+</p>
+
+<p align="center">
+
+<img src="./assests/divider.svg"/>
+
+</p>
 
 # 👨‍💻 About Me
 
-```yaml
-Name: Abhishek M R
+```java
+public class Developer {
 
-Location: India
+    String name = "Abhishek M R";
 
-Role: Full Stack Developer
+    String role = "Full Stack Developer";
 
-Learning:
-  - Spring Boot
-  - System Design
-  - Networking
-  - DSA
+    String location = "India";
 
-Goal:
-  Crack Product Based Companies 🚀
+    String[] languages = {
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "C"
+    };
+
+    String[] technologies = {
+        "Spring Boot",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "MySQL"
+    };
+
+    String[] interests = {
+        "Networking",
+        "Cyber Security",
+        "System Design",
+        "Open Source"
+    };
+
+    String currentlyLearning =
+        "Advanced Spring Boot";
+
+   
+
+}
 ```
 
----
+<p align="center">
 
-## <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Java-Dark.svg" width="28"> Tech Stack
+<img src="./assests/divider.svg"/>
+
+</p>
+
+# ⚡ Tech Stack
 
 <p align="center">
 
@@ -41,28 +100,28 @@ Goal:
 
 </p>
 
----
+<p align="center">
 
+<img src="./assests/skills.svg"/>
 
-
-
-## ⚡ Technical Skills
+</p>
 
 <p align="center">
-<img src="./assests/skills.svg" width="100%">
+
+<img src="./assests/divider.svg"/>
+
 </p>
----
 
-
-
-## 📊 GitHub Analytics
+# 📊 GitHub Analytics
 
 <p align="center">
 
 <img height="170"
+
 src="https://github-readme-stats.vercel.app/api?username=abhi-byte62&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github"/>
 
 <img height="170"
+
 src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhi-byte62&layout=compact&theme=tokyonight&hide_border=true"/>
 
 </p>
@@ -70,97 +129,151 @@ src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhi-byte62&
 <p align="center">
 
 <img
+
 src="https://streak-stats.demolab.com?user=abhi-byte62&theme=tokyonight&hide_border=true"/>
 
 </p>
 
----
-
----
-
-# 🔥 GitHub Streak
-
 <p align="center">
 
-<img src="https://streak-stats.demolab.com?user=abhi-byte62&theme=tokyonight&hide_border=true"/>
+<img src="./assests/divider.svg"/>
 
 </p>
 
----
-
-# 📊 Contribution Graph
-
-<p align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=abhi-byte62&theme=tokyo-night&hide_border=true"/>
-
-</p>
-
----
 
 # 🚀 Featured Projects
 
-| Project | Description |
-|---------|-------------|
-| 🚀 Packet Sniffer 3D | Interactive packet visualization using Three.js & PCAP |
-| 👻 Specter Proxy | MITM + TLS Proxy with debugging |
-| 🌐 Portfolio | React + Tailwind + Framer Motion |
-| ☕ Java DSA | Complete placement preparation |
+<p align="center">
 
----
+<a href="https://github.com/abhi-byte62/packet-sniffer">
+
+<img
+src="https://github-readme-stats.vercel.app/api/pin/?username=abhi-byte62&repo=packet-sniffer&theme=tokyonight&hide_border=true"/>
+
+</a>
+
+<a href="https://github.com/abhi-byte62/specter-proxy">
+
+<img
+src="https://github-readme-stats.vercel.app/api/pin/?username=abhi-byte62&repo=specter-proxy&theme=tokyonight&hide_border=true"/>
+
+</a>
+
+</p>
+
+<p align="center">
+
+<a href="https://github.com/abhi-byte62/portfolio">
+
+<img
+src="https://github-readme-stats.vercel.app/api/pin/?username=abhi-byte62&repo=portfolio&theme=tokyonight&hide_border=true"/>
+
+</a>
+
+<a href="https://github.com/abhi-byte62/java-dsa">
+
+<img
+src="https://github-readme-stats.vercel.app/api/pin/?username=abhi-byte62&repo=java-dsa&theme=tokyonight&hide_border=true"/>
+
+</a>
+
+</p>
+
+<p align="center">
+
+<img src="./assests/divider.svg"/>
+
+</p>
+
+# 🏆 Achievements
+
+<p align="center">
+
+<img
+src="https://github-profile-trophy.vercel.app/?username=abhi-byte62&theme=tokyonight&column=4&margin-w=15&margin-h=15&no-frame=true"/>
+
+</p>
+
+<p align="center">
+
+<img src="./assests/divider.svg"/>
+
+</p>
+
+# 📈 Contribution Graph
+
+<p align="center">
+
+<img
+src="https://github-readme-activity-graph.vercel.app/graph?username=abhi-byte62&theme=tokyo-night&hide_border=true"/>
+
+</p>
+
+<p align="center">
+
+<img src="./assests/divider.svg"/>
+
+</p>
 
 # 🎯 Current Focus
 
-- ✅ DSA Daily
-- ✅ React
-- ✅ Spring Boot
-- ✅ Networking
-- ✅ Open Source
+<div align="center">
 
----
+| 🚀 Currently Building | 📚 Learning | 🎯 Goal |
+|:---------------------:|:-----------:|:-------:|
+| Full Stack Projects | Spring Boot | Product-Based Companies |
+| Networking Tools | System Design | Open Source |
+| Portfolio | Docker | Clean Architecture |
 
-# 🌍 Connect
+</div>
 
 <p align="center">
 
-<a href="https://abhishekmr.vercel.app">
-<img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=vercel&logoColor=white"/>
-</a>
+<img src="./assests/divider.svg"/>
+
+</p>
+
+# 🌍 Let's Connect
+
+<p align="center">
 
 <a href="https://github.com/abhi-byte62">
-<img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github"/>
+<img src="https://skillicons.dev/icons?i=github" height="50"/>
 </a>
 
-<a href="https://linkedin.com/in/YOUR-LINK">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
+<a href="https://linkedin.com/in/YOUR-LINK](https://www.linkedin.com/in/abhishekmr029/">
+<img src="https://skillicons.dev/icons?i=linkedin" height="50"/>
 </a>
 
 <a href="https://leetcode.com/u/playboldAbhi/">
-<img src="https://img.shields.io/badge/LeetCode-orange?style=for-the-badge&logo=leetcode"/>
+<img src="https://skillicons.dev/icons?i=stackoverflow" height="50"/>
+</a>
+
+<a href="mailto:mrabhisheak@gmail.com">
+<img src="https://skillicons.dev/icons?i=gmail" height="50"/>
 </a>
 
 </p>
 
----
-
-# 🐍 Contribution Snake
-
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/abhi-byte62/abhi-byte62/output/github-contribution-grid-snake-dark.svg"/>
+<img src="./assests/divider.svg"/>
 
 </p>
 
----
+# 👀 Profile Views
 
 <p align="center">
 
-<img src="https://komarev.com/ghpvc/?username=abhi-byte62&style=for-the-badge&color=blue"/>
+<img
+src="https://komarev.com/ghpvc/?username=abhi-byte62&style=for-the-badge&color=3B82F6"/>
 
 </p>
 
 <p align="center">
 
-⭐ Thanks for visiting ⭐
+### ⭐ *Building secure, scalable software one commit at a time.*
+
+**Thanks for visiting!**
 
 </p>
