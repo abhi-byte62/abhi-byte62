@@ -18,7 +18,7 @@
 
 </a>
 
-<a href="https://linkedin.com/in/YOUR-LINK">
+<a href="https://www.linkedin.com/in/abhishekmr029/">
 
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 
@@ -30,7 +30,7 @@
 
 </a>
 
-<a href="https://YOURPORTFOLIO.vercel.app">
+<a href="https://abhishekmr.vercel.app">
 
 <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
 
@@ -44,45 +44,19 @@
 
 </p>
 
-# 👨‍💻 About Me
+# About
+
+I build full-stack web applications and low-level networking tools, with Java and Spring Boot as my primary stack and a growing focus on system design. Most of my recent work has been split between shipping production-style projects (booking platforms, browser extensions) and building tools closer to the network layer — packet inspection, proxying — where I get to think about protocols instead of just APIs.
+
+Currently deepening my Spring Boot and distributed systems knowledge while preparing for SDE roles at product companies.
 
 ```java
 public class Developer {
-
     String name = "Abhishek M R";
-
-    String role = "Full Stack Developer";
-
-    String location = "India";
-
-    String[] languages = {
-        "Java",
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "C"
-    };
-
-    String[] technologies = {
-        "Spring Boot",
-        "React",
-        "Node.js",
-        "MongoDB",
-        "MySQL"
-    };
-
-    String[] interests = {
-        "Networking",
-        "Cyber Security",
-        "System Design",
-        "Open Source"
-    };
-
-    String currentlyLearning =
-        "Advanced Spring Boot";
-
-   
-
+    String focus = "Backend systems, networking tools, full-stack apps";
+    String[] coreStack = { "Java", "Spring Boot", "React", "MySQL", "MongoDB" };
+    String[] alsoUses = { "TypeScript", "Node.js", "Python", "Docker" };
+    boolean openToWork = true;
 }
 ```
 
@@ -92,7 +66,7 @@ public class Developer {
 
 </p>
 
-# ⚡ Tech Stack
+# Tech Stack
 
 <p align="center">
 
@@ -112,25 +86,19 @@ public class Developer {
 
 </p>
 
-# 📊 GitHub Analytics
+# GitHub Stats
 
 <p align="center">
 
-<img height="170"
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=abhi-byte62&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github"/>
 
-src="https://github-readme-stats.vercel.app/api?username=abhi-byte62&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github"/>
-
-<img height="170"
-
-src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhi-byte62&layout=compact&theme=tokyonight&hide_border=true"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhi-byte62&layout=compact&theme=tokyonight&hide_border=true"/>
 
 </p>
 
 <p align="center">
 
-<img
-
-src="https://streak-stats.demolab.com?user=abhi-byte62&theme=tokyonight&hide_border=true"/>
+<img src="https://streak-stats.demolab.com?user=abhi-byte62&theme=tokyonight&hide_border=true"/>
 
 </p>
 
@@ -141,89 +109,21 @@ src="https://streak-stats.demolab.com?user=abhi-byte62&theme=tokyonight&hide_bor
 </p>
 
 
-# 🚀 Featured Projects
-
-<p align="center">
-
-<a href="https://github.com/abhi-byte62/packet-sniffer">
-
-<img
-src="https://github-readme-stats.vercel.app/api/pin/?username=abhi-byte62&repo=packet-sniffer&theme=tokyonight&hide_border=true"/>
-
-</a>
-
-<a href="https://github.com/abhi-byte62/specter-proxy">
-
-<img
-src="https://github-readme-stats.vercel.app/api/pin/?username=abhi-byte62&repo=specter-proxy&theme=tokyonight&hide_border=true"/>
-
-</a>
-
-</p>
-
-<p align="center">
-
-<a href="https://github.com/abhi-byte62/portfolio">
-
-<img
-src="https://github-readme-stats.vercel.app/api/pin/?username=abhi-byte62&repo=portfolio&theme=tokyonight&hide_border=true"/>
-
-</a>
-
-<a href="https://github.com/abhi-byte62/java-dsa">
-
-<img
-src="https://github-readme-stats.vercel.app/api/pin/?username=abhi-byte62&repo=java-dsa&theme=tokyonight&hide_border=true"/>
-
-</a>
-
-</p>
-
-<p align="center">
-
-<img src="./assests/divider.svg"/>
-
-</p>
-
-# 🏆 Achievements
-
-<p align="center">
-
-<img
-src="https://github-profile-trophy.vercel.app/?username=abhi-byte62&theme=tokyonight&column=4&margin-w=15&margin-h=15&no-frame=true"/>
-
-</p>
-
-<p align="center">
-
-<img src="./assests/divider.svg"/>
-
-</p>
-
-# 📈 Contribution Graph
-
-<p align="center">
-
-<img
-src="https://github-readme-activity-graph.vercel.app/graph?username=abhi-byte62&theme=tokyo-night&hide_border=true"/>
-
-</p>
-
-<p align="center">
-
-<img src="./assests/divider.svg"/>
-
-</p>
-
-# 🎯 Current Focus
+# Featured Projects
 
 <div align="center">
 
-| 🚀 Currently Building | 📚 Learning | 🎯 Goal |
-|:---------------------:|:-----------:|:-------:|
-| Full Stack Projects | Spring Boot | Product-Based Companies |
-| Networking Tools | System Design | Open Source |
-| Portfolio | Docker | Clean Architecture |
+### [Specter Proxy](https://github.com/abhi-byte62/specter-proxy)
+A lightweight TypeScript-based proxy built to intercept and inspect traffic at the protocol level — written to understand request/response handling outside the abstraction of a framework.
+
+[![Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abhi-byte62/specter-proxy)
+
+<br/>
+
+### [Packet Sniffer 3D](https://github.com/abhi-byte62/packet-sniffer-3d-)
+A network packet sniffer with a visual layer on top, built to make raw traffic capture and analysis legible rather than just a stream of hex and headers.
+
+[![Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abhi-byte62/packet-sniffer-3d-)
 
 </div>
 
@@ -233,25 +133,11 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=abhi-byte62&
 
 </p>
 
-# 🌍 Let's Connect
+# Activity
 
 <p align="center">
 
-<a href="https://github.com/abhi-byte62">
-<img src="https://skillicons.dev/icons?i=github" height="50"/>
-</a>
-
-<a href="https://linkedin.com/in/YOUR-LINK](https://www.linkedin.com/in/abhishekmr029/">
-<img src="https://skillicons.dev/icons?i=linkedin" height="50"/>
-</a>
-
-<a href="https://leetcode.com/u/playboldAbhi/">
-<img src="https://skillicons.dev/icons?i=stackoverflow" height="50"/>
-</a>
-
-<a href="mailto:mrabhisheak@gmail.com">
-<img src="https://skillicons.dev/icons?i=gmail" height="50"/>
-</a>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=abhi-byte62&theme=tokyo-night&hide_border=true"/>
 
 </p>
 
@@ -261,19 +147,36 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=abhi-byte62&
 
 </p>
 
-# 👀 Profile Views
+# Currently
+
+- Strengthening system design and distributed systems fundamentals
+- Going deeper into Spring Boot internals beyond CRUD — security, JPA, transaction management
+- Interviewing for SDE roles at product-based companies
 
 <p align="center">
 
-<img
-src="https://komarev.com/ghpvc/?username=abhi-byte62&style=for-the-badge&color=3B82F6"/>
+<img src="./assests/divider.svg"/>
 
 </p>
 
+# Connect
+
 <p align="center">
 
-### ⭐ *Building secure, scalable software one commit at a time.*
+<a href="https://github.com/abhi-byte62">
+<img src="https://skillicons.dev/icons?i=github" height="50"/>
+</a>
 
-**Thanks for visiting!**
+<a href="https://www.linkedin.com/in/abhishekmr029/">
+<img src="https://skillicons.dev/icons?i=linkedin" height="50"/>
+</a>
+
+<a href="https://leetcode.com/u/playboldAbhi/">
+<img src="https://skillicons.dev/icons?i=leetcode" height="50"/>
+</a>
+
+<a href="mailto:mrabhisheak@gmail.com">
+<img src="https://skillicons.dev/icons?i=gmail" height="50"/>
+</a>
 
 </p>
