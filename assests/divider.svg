@@ -1,1 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="80"
+     viewBox="0 0 1200 80">
 
+<defs>
+
+<linearGradient id="line"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="0%">
+
+<stop offset="0%" stop-color="#050816"/>
+
+<stop offset="50%" stop-color="#3B82F6"/>
+
+<stop offset="100%" stop-color="#050816"/>
+
+</linearGradient>
+
+<radialGradient id="centerGlow">
+
+<stop offset="0%" stop-color="#60A5FA"/>
+
+<stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+
+</radialGradient>
+
+<filter id="blur">
+
+<feGaussianBlur stdDeviation="4"/>
+
+</filter>
+
+</defs>
+
+<!-- Left Line -->
+
+<line
+
+x1="80"
+
+y1="40"
+
+x2="520"
+
+y2="40"
+
+stroke="url(#line)"
+
+stroke-width="2"/>
+
+<!-- Right Line -->
+
+<line
+
+x1="680"
+
+y1="40"
+
+x2="1120"
+
+y2="40"
+
+stroke="url(#line)"
+
+stroke-width="2"/>
+
+<!-- Center Glow -->
+
+<circle
+
+cx="600"
+
+cy="40"
+
+r="18"
+
+fill="url(#centerGlow)"
+
+filter="url(#blur)">
+
+<animate
+
+attributeName="r"
+
+values="18;25;18"
+
+dur="2s"
+
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- Diamond -->
+
+<polygon
+
+points="600,24 616,40 600,56 584,40"
+
+fill="#3B82F6">
+
+<animateTransform
+
+attributeName="transform"
+
+attributeType="XML"
+
+type="rotate"
+
+from="0 600 40"
+
+to="360 600 40"
+
+dur="10s"
+
+repeatCount="indefinite"/>
+
+</polygon>
+
+<!-- Small Dots -->
+
+<circle cx="560" cy="40" r="3" fill="#60A5FA">
+<animate attributeName="opacity"
+values="0.2;1;0.2"
+dur="2s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="640" cy="40" r="3" fill="#60A5FA">
+<animate attributeName="opacity"
+values="1;0.2;1"
+dur="2s"
+repeatCount="indefinite"/>
+</circle>
+
+</svg>
