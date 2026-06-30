@@ -33,13 +33,15 @@ Goal:
 
 ---
 
-# ⚡ Tech Stack
+## <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Java-Dark.svg" width="28"> Tech Stack
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=java,spring,react,nodejs,express,mongodb,mysql,tailwind,typescript,javascript,docker,git,github,linux,vscode&perline=7"/>
+<img src="https://skillicons.dev/icons?i=java,spring,react,nodejs,express,mongodb,mysql,tailwind,typescript,javascript,docker,git,github,linux,vscode&theme=dark&perline=8"/>
 
 </p>
+
+---
 
 
 
@@ -53,15 +55,26 @@ Goal:
 
 # 📈 GitHub Analytics
 
+## 📊 GitHub Analytics
+
 <p align="center">
 
-<img height="180"
-src="https://github-readme-stats.vercel.app/api?username=abhi-byte62&show_icons=true&theme=tokyonight&hide_border=true"/>
+<img height="170"
+src="https://github-readme-stats.vercel.app/api?username=abhi-byte62&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github"/>
 
-<img height="180"
+<img height="170"
 src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhi-byte62&layout=compact&theme=tokyonight&hide_border=true"/>
 
 </p>
+
+<p align="center">
+
+<img
+src="https://streak-stats.demolab.com?user=abhi-byte62&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+---
 
 ---
 
