@@ -4,7 +4,7 @@
 
 A Software Engineer focused on full-stack development, backend systems, and scalable web applications.
 
-Bangalore, India | Built shipping tools, not toys | Open to work
+Bangalore, India | Open to SDE / Full Stack Roles
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abhi-byte62)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhishekmr029/)
@@ -18,7 +18,9 @@ Bangalore, India | Built shipping tools, not toys | Open to work
 
 ## About
 
-I write backend systems and networking tools. Most of my work is either full-stack web (Java, Spring Boot, React) or closer to the protocol layer — proxies, packet inspection, traffic analysis. I like working where you stop calling library functions and start reading RFCs.
+Full-stack developer building scalable web applications with Java/Spring Boot and React. I ship production-ready systems — proxies, traffic analysis tools — not just code snippets. Passionate about backend systems, clean architecture, and writing code that actually works.
+
+Open to SDE and Full Stack developer roles.
 
 ## Skills
 
@@ -32,7 +34,7 @@ I write backend systems and networking tools. Most of my work is either full-sta
 > Local HTTP/HTTPS proxy for real-time traffic interception and network simulation.
 
 - Packet interception via Node.js Streams with buffer management
-- Latency injection, packet filtering, HTTP error simulation
+- Latency injection, packet filtering, HTTP error simulation  
 - TLS inspection — MITMs its own encrypted traffic
 - Live terminal dashboard for real-time analysis
 
