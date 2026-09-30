@@ -96,7 +96,9 @@ Languages │ C++17 • Java 21 • Python 3.10 • JavaScript / TypeScript (ESN
 
 ## 📈 System Architecture & Research Philosophy
 
-┌──────────────────────────────────────────────────────────────────┐ │ "Build it. Measure it. Profile it. Optimize it." │ │ │ │ 1. Invariant Correctness → Math-verified state & zero leaks │ │ 2. Mechanical Sympathy → Cache locality, fixed-point math │ │ 3. Defensive Perimeter → Pre-connection SSRF & DNS pinning │ │ 4. Deterministic Testing → Seeded trials, OCC conflict tests │ └──────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│ "Build it. Measure it. Profile it. Optimize it." │ │ │ │ 1. Invariant Correctness → Math-verified state & zero leaks │ │ 2. Mechanical Sympathy → Cache locality, fixed-point math │ │ 3. Defensive Perimeter → Pre-connection SSRF & DNS pinning │ │ 4. Deterministic Testing → Seeded trials, OCC conflict tests │ 
+└──────────────────────────────────────────────────────────────────┘
 
 
 ---
