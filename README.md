@@ -1,208 +1,91 @@
-<div align="center">
-
 # Abhishek M R
 
-### Software Engineer â€¢ Systems â€¢ Quantitative Engineering â€¢ Distributed Backends
+Hey! I'm Abhishek (`@abhi-byte62`), a Computer Science undergrad based in Bangalore, India (graduating 2027).
 
-Building low-latency matching engines, distributed architectures, network security tooling, and real-time state synchronization systems.
+I spend most of my time working on **low-latency systems**, **distributed backends**, and **security tooling** in C++, Java, and TypeScript. I care a lot about deterministic execution, zero-copy I/O, concurrency primitives, and measuring things instead of guessing.
 
-**Bangalore, India**
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-050914?style=for-the-badge&logo=vercel&logoColor=4D7CFF)](https://abhishekmr.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abhi-byte62)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhishekmr029/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/playboldAbhi)
-[![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/playboldAbhi)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mrabhisheak@gmail.com)
-
-</div>
+[Portfolio](https://abhishekmr.vercel.app/) â€¢ [LinkedIn](https://www.linkedin.com/in/abhishekmr029/) â€¢ [LeetCode](https://leetcode.com/u/playboldAbhi/) â€¢ [Codeforces](https://codeforces.com/profile/playboldAbhi) â€¢ [Email](mailto:mrabhisheak@gmail.com)
 
 ---
 
-## âš¡ Engineering Focus
+## Upstream Open Source Contributions
 
-| Domain | Core Competencies & Technologies |
-|:---|:---|
-| **Systems & Quant** | C++17, fixed-point integer arithmetic, limit order books, FIFO price-time matching, market simulation, Hawkes processes, latency benchmarking |
-| **Backend & Distributed Systems** | Java 21, Spring Boot 3, Node.js, Express, FastAPI, RabbitMQ event queues, Redis caching, PostgreSQL transactions |
-| **Security & Networking** | Zero-trust AST data-flow analysis, SSRF protection guards, dynamic TLS interception, stream backpressure flow control, binary PCAP parsing |
-| **Real-Time & Full-Stack** | React 19, TypeScript, Vite, WebSockets, Socket.io, TanStack Query, optimistic concurrency control (OCC), Three.js / WebGL |
-| **Infrastructure & Tooling** | Docker, Docker Compose, Linux / POSIX shell, GCC `-O3` optimizations, GitHub Actions CI/CD |
+I contribute to core infrastructure, database engines, and protocol runtimes:
 
----
-
-# ðŸš€ Featured Systems & Projects
-
-## 1. TradeForge â€” Real-Time Paper Trading & Market Simulation Platform
-
-[![Repository](https://img.shields.io/badge/GitHub-TradeForge-181717?style=flat&logo=github)](https://github.com/abhi-byte62/tradeforge)
-[![Live Demo](https://img.shields.io/badge/Live_Overview-abhishekmr.vercel.app%2Ftradeforge-blue?style=flat&logo=vercel)](https://abhishekmr.vercel.app/tradeforge)
-
-A modular, high-performance web-based paper trading platform and market simulator featuring an in-memory double-sided order book with deterministic price-time priority matching, synchronous pre-trade risk evaluation, and stochastic tick simulation.
-
-**Tech:** TypeScript â€¢ Node.js â€¢ React 19 â€¢ Native WebSockets â€¢ PostgreSQL â€¢ Tailwind CSS â€¢ Canvas API â€¢ Docker
-
-### Engineering Highlights
-- **In-Memory Matching Core:** Deterministic FIFO matching algorithm with $O(1)$ hash-map cancellations, multi-level VWAP fills, and benchmarked execution at **247,000+ orders/sec** (~4.1 Âµs latency).
-- **Synchronous Risk Engine:** Enforces pre-trade margin gates (5x MIS leverage), tick size validation, and circuit-breaker bands ($\pm 10\%$) with invariant zero-leakage balance conservation.
-- **WebSocket Streaming:** Broadcasts real-time Level-2 depth ladder snapshots and 5-level market feeds to web clients over low-overhead socket connections.
-- **Visual Analytics:** Custom Canvas-based interactive candlestick chart and live telemetry dashboard.
+- **[valkey-io/valkey](https://github.com/valkey-io/valkey)** *(C)*: Fixed integer overflow handling during stream trimming (`src/t_stream.c`), removed non-reentrant static compression buffers in RDB serialization (`src/rdb.c`), and modularized key eviction internals (`src/evict.c`).
+- **[fastify](https://github.com/fastify)** *(TypeScript / JS)*: Added `$ref` schema resolution to TypeBox validator compiler, enabled OpenAPI 3.x path parameter serialization in `fastify-swagger`, and fixed compiler type signatures in `ajv-compiler`.
+- **[QuantConnect/Lean](https://github.com/QuantConnect/Lean)** & **[quickfix](https://github.com/quickfix/quickfix)** *(C#, C++)*: Fixed non-USD futures settlement cash adjustments and lunch-break market bar calculations in Lean; resolved socket disconnect callback firing on session terminations in QuickFIX.
+- **[unjs](https://github.com/unjs)** *(TypeScript)*: Propagated `AbortSignal` through `proxyFetch` in `httpxy` to close orphaned upstream sockets, and fixed line-terminator regex edge cases in `pathe`.
 
 ---
 
-## 2. LiquidityLens â€” Quantitative Limit Order Book & Microstructure Research
+## Projects
 
-[![Repository](https://img.shields.io/badge/GitHub-LiquidityLens-181717?style=flat&logo=github)](https://github.com/abhi-byte62/liquiditylens)
-[![Live Demo](https://img.shields.io/badge/Live_Overview-abhishekmr.vercel.app%2Fliquiditylens-blue?style=flat&logo=vercel)](https://abhishekmr.vercel.app/liquiditylens)
+### [TradeForge](https://github.com/abhi-byte62/tradeforge)
+*Real-time paper trading platform & market simulator* â€¢ [Interactive Overview](https://abhishekmr.vercel.app/tradeforge)
+- In-memory deterministic FIFO limit order book in TypeScript executing **247k+ orders/sec** (~4.1 Âµs median latency).
+- Synchronous pre-trade risk engine with 5x MIS leverage limits, tick increments, and $\pm 10\%$ circuit bands.
+- Geometric Brownian Motion jump-diffusion price simulator streaming Level-2 depth ladders over WebSockets.
+- *Tech:* TypeScript, React 19, PostgreSQL, WebSockets, Canvas API, Docker.
 
-An event-driven market microstructure research platform and C++ simulation engine for studying limit order book dynamics, FIFO queue priority, fill probability, adverse selection, and microsecond-level latency budgets.
+### [LiquidityLens](https://github.com/abhi-byte62/liquiditylens)
+*Quantitative market microstructure research & LOB matching core* â€¢ [Interactive Overview](https://abhishekmr.vercel.app/liquiditylens)
+- Deterministic C++17 matching engine processing **4.5M+ events/sec** (~220 ns match latency) using fixed-point `int64_t` arithmetic.
+- FIFO queue priority tracking across 7 queue-ahead tiers with synthetic Hawkes process order arrivals.
+- Zero look-ahead post-fill markouts to measure adverse selection across $10\,\mu\text{s} \to 500\,\mu\text{s}$ simulated latency steps.
+- *Tech:* C++17, Python 3.10, FastAPI, React 19, WebSockets, Docker.
 
-**Tech:** C++17 â€¢ GCC `-O3` â€¢ Python 3.10 â€¢ FastAPI â€¢ React 19 â€¢ Fixed-Point Math â€¢ Hawkes Processes â€¢ WebSocket â€¢ Docker
+### [StackLens](https://github.com/abhi-byte62/stacklens)
+*Asynchronous web technology intelligence engine* â€¢ [Interactive Overview](https://abhishekmr.vercel.app/stacklens)
+- Passive reconnaissance engine evaluating 200+ signatures from HTTP headers, DOM trees, scripts, and TLS characteristics.
+- Asynchronous scanning pipeline powered by Spring Boot and RabbitMQ to decouple probes from API requests.
+- SSRF defense layer validating target IPs against RFC 1918, loopback, and cloud metadata addresses before dispatch.
+- *Tech:* Java 21, Spring Boot 3, RabbitMQ, PostgreSQL, Redis, React 19, TypeScript.
 
-### Engineering Highlights
-- **High-Throughput Matching Core:** C++17 matching engine utilizing fixed-point `int64_t` arithmetic (zero floating-point drift), benchmarked at **4.5M+ events/sec** with **~220 ns average event latency**.
-- **FIFO Queue Priority Modeling:** Evaluates fill probability decay across **7 queue-ahead tiers** using deterministic Monte Carlo simulations.
-- **Adverse Selection Markouts:** Computes multi-horizon post-fill price excursions ($t+10\text{ms}, t+100\text{ms}, t+1\text{s}$) to quantify execution quality without look-ahead bias.
-- **Latency Sensitivity Engine:** Simulates execution slip and queue degradation across multi-stage delay envelopes ($10\,\mu\text{s} \to 500\,\mu\text{s}$).
+### [DontTrust](https://github.com/abhi-byte62/dontTrust)
+*Application security assessment platform & AST taint engine* â€¢ [Interactive Overview](https://abhishekmr.vercel.app/donttrust)
+- AST source-to-sink data flow engine detecting client-side DOM XSS without browser execution overhead.
+- Multi-identity differential authorization matrix testing Horizontal BOLA/IDOR and Vertical Privilege Escalation.
+- Deterministic SHA-256 state graphs with automated secret redaction and SARIF v2.1.0 report generation.
+- *Tech:* TypeScript, Node.js, React 19, Cytoscape.js, Playwright, Vitest, SARIF.
 
----
+### [Specter Proxy](https://github.com/abhi-byte62/specter-proxy)
+*Stream backpressure & TLS inspection proxy* â€¢ [Interactive Overview](https://abhishekmr.vercel.app/specter-proxy)
+- Forward proxy using Node.js stream flow control (`highWaterMark`) to prevent buffer bloat and cap RAM usage to ~35 MB under heavy load.
+- Dynamic TLS interception generating on-the-fly ephemeral certificates for arbitrary SNI hosts via a local CA.
+- Chaos engine injecting configurable latency, packet drops, and HTTP faults (502, 408).
+- *Tech:* Node.js Streams, TCP, TLS, Dynamic SNI.
 
-## 3. StackLens â€” Website Engineering Intelligence & Reconnaissance Engine
+### [TaskFlow](https://github.com/abhi-byte62/taskflow)
+*Real-time collaborative Kanban with optimistic concurrency* â€¢ [Interactive Overview](https://abhishekmr.vercel.app/taskflow)
+- Real-time board synchronization with integer revision tags rejecting stale writes via optimistic concurrency control (OCC).
+- Fractional midpoint ranking for $O(1)$ drag-and-drop reordering without cascading database updates.
+- *Tech:* React, Node.js, PostgreSQL, Prisma, Socket.io, TanStack Query, Tailwind CSS.
 
-[![Repository](https://img.shields.io/badge/GitHub-StackLens-181717?style=flat&logo=github)](https://github.com/abhi-byte62/stacklens)
-[![Live Demo](https://img.shields.io/badge/Live_Overview-abhishekmr.vercel.app%2Fstacklens-blue?style=flat&logo=vercel)](https://abhishekmr.vercel.app/stacklens)
-
-An asynchronous developer intelligence engine that parses and correlates public web application signals to infer infrastructure topologies, protected by SSRF-hardened perimeter guards.
-
-**Tech:** Java 21 â€¢ Spring Boot 3 â€¢ RabbitMQ â€¢ PostgreSQL 16 â€¢ Redis 7.2 â€¢ React 19 â€¢ TypeScript â€¢ Tailwind CSS â€¢ Docker
-
-### Engineering Highlights
-- **Signature Detection Engine:** Correlates **200+ weighted signatures** across DOM structures, HTTP response headers, script signatures, and TLS fingerprints.
-- **Asynchronous Event-Driven Pipeline:** Leverages RabbitMQ and Spring Boot workers to isolate long-running network probes from API gateways.
-- **SSRF Perimeter Shield:** Implements DNS pre-resolution and private subnet filtering (RFC 1918, loopback, link-local, cloud metadata) to block request smuggling and perimeter probing.
-- **Architecture DAG Visualization:** Converts detected component relationships into an interactive directed acyclic graph (DAG) distinguishing directly observed vs. inferred dependencies.
-
----
-
-## 4. DontTrust â€” Application Security & Attack-Surface Intelligence Platform
-
-[![Repository](https://img.shields.io/badge/GitHub-DontTrust-181717?style=flat&logo=github)](https://github.com/abhi-byte62/dontTrust)
-[![Live Demo](https://img.shields.io/badge/Live_Overview-abhishekmr.vercel.app%2Fdonttrust-blue?style=flat&logo=vercel)](https://abhishekmr.vercel.app/donttrust)
-
-A distributed web application security assessment platform in TypeScript across 17 monorepo workspaces, integrating discovery, AST source-to-sink data flow analysis, multi-identity differential authorization, and SARIF v2.1.0 reporting.
-
-**Tech:** TypeScript â€¢ Node.js â€¢ React 19 â€¢ Cytoscape.js â€¢ AST Analysis â€¢ WebSockets â€¢ Playwright â€¢ Vitest â€¢ Docker â€¢ SARIF
-
-### Engineering Highlights
-- **AST Source-to-Sink Data Flow:** Client-side AST analysis detecting DOM-based XSS pathways and taint propagation with zero third-party runtime dependencies.
-- **Differential Authorization Matrix:** Automated multi-identity session analysis testing Horizontal BOLA / IDOR and Vertical Privilege Escalation flaws.
-- **Deterministic State Graph:** Generates SHA-256 state graphs with automated secret redaction and industry-standard SARIF v2.1.0 compliance exports.
-- **Benchmark Precision:** Achieves 100% precision and zero false positives across reproducible benchmark test suites.
-
----
-
-## 5. Specter Proxy â€” Stream Backpressure & TLS Interception Proxy
-
-[![Repository](https://img.shields.io/badge/GitHub-Specter_Proxy-181717?style=flat&logo=github)](https://github.com/abhi-byte62/specter-proxy)
-[![Live Demo](https://img.shields.io/badge/Live_Overview-abhishekmr.vercel.app%2Fspecter--proxy-blue?style=flat&logo=vercel)](https://abhishekmr.vercel.app/specter-proxy)
-
-A stream-oriented forward proxy designed for live protocol inspection, network fault injection, and controlled network degradation experiments.
-
-**Tech:** Node.js Streams â€¢ TCP â€¢ TLS â€¢ Dynamic SNI â€¢ Backpressure Flow Control
-
-### Engineering Highlights
-- **Stream Backpressure Control:** Manages high-watermark pause/resume flow control to prevent buffer bloat and cap heap consumption under sustained multi-gigabit traffic to ~35MB.
-- **Dynamic TLS Interception:** Generates on-the-fly ephemeral certificates for arbitrary SNI hostnames signed by a local certificate authority.
-- **Chaos Injection Engine:** Programmatic latency throttling, packet drops, and HTTP fault synthesis (502, 408) for resilience testing.
+### [Packet Sniffer 3D](https://github.com/abhi-byte62/packet-sniffer-3d)
+*Binary PCAP parser & WebGL 3D network topology* â€¢ [Interactive Overview](https://abhishekmr.vercel.app/packet-sniffer)
+- In-browser binary PCAP parser reading raw `ArrayBuffer` views for zero-copy header decoding.
+- WebGL instanced rendering displaying 50,000+ simultaneous packet trajectories at 60 FPS in 3 draw calls.
+- *Tech:* Three.js, WebGL, JavaScript, Vite, ArrayBuffers.
 
 ---
 
-## 6. TaskFlow â€” Real-Time Collaborative State Engine
+## Tech
 
-[![Repository](https://img.shields.io/badge/GitHub-TaskFlow-181717?style=flat&logo=github)](https://github.com/abhi-byte62/taskflow)
-[![Live Demo](https://img.shields.io/badge/Live_Overview-abhishekmr.vercel.app%2Ftaskflow-blue?style=flat&logo=vercel)](https://abhishekmr.vercel.app/taskflow)
-
-A real-time collaborative Kanban workspace architected around optimistic concurrency control, sub-10ms state synchronization, and conflict-free ordering.
-
-**Tech:** React 18 â€¢ TypeScript â€¢ Node.js â€¢ Express â€¢ PostgreSQL 17 â€¢ Prisma ORM â€¢ Socket.io â€¢ TanStack Query â€¢ @dnd-kit
-
-### Engineering Highlights
-- **Optimistic Concurrency Control (OCC):** Integer revision tags reject stale concurrent writes with 409 Conflict triggers, preventing lost updates.
-- **Midpoint Float Ranking:** Eliminates cascading $O(N)$ database updates on drag-and-drop operations through fractional index rebalancing.
-- **Live State Sync:** Socket.io room-scoped events broadcast board state mutations and cursor presence across connected clients in sub-10ms.
+- **Languages:** C++17, Java 21, TypeScript, JavaScript, Python, C, SQL
+- **Systems & Backend:** Spring Boot 3, Node.js, Express, FastAPI, RabbitMQ, Redis, PostgreSQL, WebSockets
+- **Protocols & Security:** TCP, TLS, HTTP/HTTPS, PCAP, Stream Backpressure, AST Analysis, SSRF Defense
+- **Frontend & Graphics:** React 19, TypeScript, Tailwind CSS, Three.js, WebGL, Canvas API, TanStack Query
+- **Tools & Infra:** Docker, Docker Compose, Linux, Git, GitHub Actions, GCC/Clang, Vitest
 
 ---
 
-## 7. Packet Sniffer 3D â€” Binary PCAP Ingestion & WebGL Spatial Topology
+## Problem Solving
 
-[![Repository](https://img.shields.io/badge/GitHub-Packet_Sniffer_3D-181717?style=flat&logo=github)](https://github.com/abhi-byte62/packet-sniffer-3d)
-[![Live Demo](https://img.shields.io/badge/Live_Overview-abhishekmr.vercel.app%2Fpacket--sniffer-blue?style=flat&logo=vercel)](https://abhishekmr.vercel.app/packet-sniffer)
-
-A browser-based network visualization engine that parses binary PCAP captures and renders packet flows as an interactive 3D topology.
-
-**Tech:** Three.js â€¢ WebGL â€¢ JavaScript â€¢ Vite â€¢ Binary PCAP Parsing â€¢ ArrayBuffers
-
-### Engineering Highlights
-- **Zero-Copy Binary PCAP Parser:** Extracts Ethernet, IPv4, TCP, and UDP headers directly from raw `ArrayBuffer` views without garbage collection overhead.
-- **GPU Instanced Rendering:** WebGL instanced meshes batch 50,000+ simultaneous packet trajectories into 3 draw calls at continuous 60 FPS.
-
----
-
-# ðŸ“Š GitHub Activity & Metrics
-
-<div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=abhi-byte62&show_icons=true&theme=tokyonight&hide_border=true&bg_color=050914&title_color=4D7CFF&text_color=94A3B8&icon_color=60A5FA" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=abhi-byte62&layout=compact&theme=tokyonight&hide_border=true&bg_color=050914&title_color=4D7CFF&text_color=94A3B8" height="165" alt="Top Languages" />
-</div>
-
----
-
-# ðŸ›  Comprehensive Technical Stack
-
-### Languages
-`C++17` `Java 21` `Python 3.10` `TypeScript` `JavaScript (ESNext)` `C` `SQL`
-
-### Systems, Quant & High-Performance
-`Limit Order Books` `Price-Time Matching (FIFO)` `Fixed-Point Arithmetic` `Hawkes Processes` `Latency Sensitivity Modeling` `ArrayBuffer Slicing`
-
-### Backend & Distributed Infrastructure
-`Spring Boot 3` `Node.js` `Express` `FastAPI` `RabbitMQ` `PostgreSQL` `Redis` `Prisma ORM` `RESTful APIs` `WebSockets` `Socket.io`
-
-### Security & Networking
-`AST Source-to-Sink Flow` `Differential Authorization` `SSRF Perimeter Protection` `DNS Rebinding Guards` `Dynamic TLS Interception` `Stream Backpressure` `Binary PCAP Parsing` `SARIF v2.1.0`
-
-### Frontend & Graphics
-`React 19` `TypeScript` `Tailwind CSS` `Three.js` `WebGL` `TanStack Query` `Canvas API` `dnd-kit` `Vite`
-
-### DevOps & Tooling
-`Docker` `Docker Compose` `Git` `GitHub Actions` `Linux (POSIX)` `GCC / Clang` `Vitest` `Playwright`
-
----
-
-# ðŸ“ Core Engineering Principles
-
-1. **Correctness First:** Define invariants, finite state transitions, and arithmetic boundaries before micro-optimizing implementations.
-2. **Measure Before Optimizing:** Rely on deterministic benchmarks, profiling, and controlled workloads rather than intuitive assumptions.
-3. **Keep the Hot Path Simple:** Eliminate dynamic allocations, heavy serialization, blocking locks, and redundant network hops from latency-critical loops.
-4. **Design for Failure:** Plan for asynchronous timeouts, network partitions, concurrent write collisions, and partial degradation across every tier.
-
----
-
-# ðŸ’¡ Problem Solving & Competitive Programming
-
+I regularly practice competitive programming and core DSA:
 - **LeetCode:** [playboldAbhi](https://leetcode.com/u/playboldAbhi)
 - **Codeforces:** [playboldAbhi](https://codeforces.com/profile/playboldAbhi)
 
 ---
 
-<div align="center">
-
-### Build â†’ Measure â†’ Profile â†’ Optimize
-
-Open to **Software Engineering, Systems, Backend, Distributed Infrastructure, and Quant Development** opportunities.
-
-[![Portfolio](https://img.shields.io/badge/abhishekmr.vercel.app-050914?style=flat-square&logo=vercel)](https://abhishekmr.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhishekmr029/)
-[![Email](https://img.shields.io/badge/mrabhisheak@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:mrabhisheak@gmail.com)
-
-</div>
+Feel free to reach out at [mrabhisheak@gmail.com](mailto:mrabhisheak@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/abhishekmr029/).
